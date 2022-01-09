@@ -1,9 +1,9 @@
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
-      FileHandalingExample fileHandalingExample=new FileHandalingExample();
-      fileHandalingExample.deleteFile();
+      DifferentExample differentExample=new DifferentExample();
+      differentExample.reverseWords();
 
     }
 }

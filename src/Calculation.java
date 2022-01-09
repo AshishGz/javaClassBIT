@@ -95,9 +95,9 @@ public class Calculation {
 //    username=["texas1","texas2","texas3"];
 //   password=["1texas",'2texas','3texas']
 
-    //Write a Java program to reverse the content of
-    // a sentence (assume a single space between two words)
-    // without reverse every word
-    //for example: I am good=>good am i
+//    Write a Java program to reverse the content of
+//     a sentence (assume a single space between two words)
+//     without reverse every word
+//    for example: I am good=>good am i
 
 }
