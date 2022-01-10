@@ -18,20 +18,51 @@ public class DifferentExample {
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter Words");
         String word=scanner.nextLine();
+        generateCaserCode(word);
         String reverse_word="";
-        for(int i=word.length()-1;i>=0;i--){
+//        for(int i=word.length()-1;i>=0;i--){
+//
+//           reverse_word=reverse_word+ word.charAt(i);
+//
+//        }
+//        if(word.equals(reverse_word)){
+//            System.out.println(word+" is palindrome");
+//        }else{
+//            System.out.println(word+" is not palindrome");
+//        }
 
-           reverse_word=reverse_word+ word.charAt(i);
+
+
+    }
+
+    String generateCaserCode(String input){
+
+        System.out.println((int)'z');
+        String casercode="";
+        for(int i=0;i<input.length();i++){
+            char character=input.charAt(i);
+            int ascii = (int) character+3;
+            char convertedChar;
+            if((int) character==122){
+                convertedChar='c';
+            }else if((int) character==120){
+                convertedChar='a';
+            }else if((int) character==121){
+                convertedChar='b';
+            }
+
+
+            else{
+
+                 convertedChar = (char)ascii;
+
+            }
+            casercode=casercode+convertedChar;
 
         }
-        if(word.equals(reverse_word)){
-            System.out.println(word+" is palindrome");
-        }else{
-            System.out.println(word+" is not palindrome");
-        }
 
-
-
+        System.out.println(casercode);
+        return  casercode;
     }
 
 
