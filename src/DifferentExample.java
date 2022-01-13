@@ -36,18 +36,16 @@ public class DifferentExample {
     }
 
     String generateCaserCode(String input){
-
-        System.out.println((int)'z');
         String casercode="";
         for(int i=0;i<input.length();i++){
             char character=input.charAt(i);
             int ascii = (int) character+3;
             char convertedChar;
-            if((int) character==122){
+            if((int) character==122){ //x
                 convertedChar='c';
-            }else if((int) character==120){
+            }else if((int) character==120){ //z
                 convertedChar='a';
-            }else if((int) character==121){
+            }else if((int) character==121){ //y
                 convertedChar='b';
             }
 
